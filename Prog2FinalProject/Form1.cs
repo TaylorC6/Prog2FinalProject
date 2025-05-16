@@ -12,6 +12,11 @@ namespace Prog2FinalProject {
     public partial class Form1 : Form {
         public Form1() {
             InitializeComponent();
+            // subscription title: TextBox
+            //  ListBox:
+            //  Add textBox
+            
+ 
         }
     }
 }
