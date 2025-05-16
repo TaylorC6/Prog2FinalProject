@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+C:\Users\price.g\Desktop\Prog2FinalProject\Prog2FinalProject\bin\Debug\Prog2FinalProject.exe.config
+=======
 C:\Users\cahill.t1\Desktop\Prog2FinalProject\Prog2FinalProject\bin\Debug\libHarfBuzzSharp.dylib
 C:\Users\cahill.t1\Desktop\Prog2FinalProject\Prog2FinalProject\bin\Debug\x86\libHarfBuzzSharp.dll
 C:\Users\cahill.t1\Desktop\Prog2FinalProject\Prog2FinalProject\bin\Debug\x64\libHarfBuzzSharp.dll
@@ -46,4 +49,8 @@ C:\Users\cahill.t1\Desktop\Prog2FinalProject\Prog2FinalProject\obj\Debug\Prog2Fi
 C:\Users\cahill.t1\Desktop\Prog2FinalProject\Prog2FinalProject\obj\Debug\Prog2FinalProject.csproj.CopyComplete
 C:\Users\cahill.t1\Desktop\Prog2FinalProject\Prog2FinalProject\obj\Debug\Prog2FinalProject.exe
 C:\Users\cahill.t1\Desktop\Prog2FinalProject\Prog2FinalProject\obj\Debug\Prog2FinalProject.pdb
+<<<<<<< HEAD
 C:\Users\cahill.t1\Desktop\Prog2FinalProject\Prog2FinalProject\obj\Debug\Prog2FinalProject.Form1.resources
+=======
+>>>>>>> 7c10fafca3ca3e6349bf5b62498055f8b9ea942e
+>>>>>>> e3c03e1edee82f7b3f3241b467b05a64b9808272
