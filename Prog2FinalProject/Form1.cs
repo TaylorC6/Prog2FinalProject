@@ -10,7 +10,13 @@ using System.Windows.Forms;
 
 namespace Prog2FinalProject {
     public partial class Form1 : Form {
-        public Form1() {
+
+        private Form myParent;
+        public Form1(Form2 form) {
+            
+            if (Properties.Resources.Username != ""){
+                button4.Text = "Exit";
+            }
             InitializeComponent();
             // subscription title: TextBox
             //  ListBox:
@@ -44,9 +50,12 @@ namespace Prog2FinalProject {
 
         private void button4_Click(object sender, EventArgs e) {
             Form log = new Form2(this);
-            log.Show();
-            this.Hide()
+            if (Properties.Resources.Username == "") {
+                log.Show();
+                this.Hide();
+            else;
 
+            }
         }
     }
 }
