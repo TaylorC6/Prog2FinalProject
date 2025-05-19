@@ -19,7 +19,34 @@ namespace Prog2FinalProject {
  
         }
         private void button1_Click(object sender, EventArgs e) {
-            
+            //Transactions
+        }
+
+        private void label5_Click(object sender, EventArgs e) {
+
+
+
+
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e) {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e) {
+            //Accounts
+        }
+
+        private void button3_Click(object sender, EventArgs e) {
+            //Upcoming
+        }
+
+        private void button4_Click(object sender, EventArgs e) {
+            Form log = new Form2(this);
+            log.Show();
+            this.Hide()
+
         }
     }
 }
