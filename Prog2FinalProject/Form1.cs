@@ -11,19 +11,17 @@ using System.Windows.Forms;
 namespace Prog2FinalProject {
     public partial class Form1 : Form {
 
-        private Form myParent;
-        public Form1(Form2 form) {
-            
-            if (Properties.Resources.Username != ""){
-                button4.Text = "Exit";
-            }
+        bool username_created = false;
+        public Form1() {
+
             InitializeComponent();
-            // subscription title: TextBox
-            //  ListBox:
-            //  Add textBox
-            
- 
         }
+        // subscription title: TextBox
+        //  ListBox:
+        //  Add textBox
+
+
+
         private void button1_Click(object sender, EventArgs e) {
             //Transactions
         }
@@ -49,13 +47,23 @@ namespace Prog2FinalProject {
         }
 
         private void button4_Click(object sender, EventArgs e) {
-            Form log = new Form2(this);
-            if (Properties.Resources.Username == "") {
-                log.Show();
+            Form f2 = new Form2(this);
+            if (username_created == false) {
+                username_created = true;
+                f2.Show();
                 this.Hide();
-            else;
-
             }
+            else {
+                Application.Exit();
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e) {
+        }
+
+        private void Form1_VisibleChanged(object sender, EventArgs e) {
+
+            if (username_created == true) { button4.Text = "Log Out"; }
         }
     }
 }

@@ -70,6 +70,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(283, 31);
             this.textBox1.TabIndex = 19;
+            this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
@@ -124,6 +125,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(283, 31);
             this.textBox3.TabIndex = 25;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label5
             // 
@@ -161,6 +163,7 @@
             this.button1.Text = "Home";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form2
             // 
