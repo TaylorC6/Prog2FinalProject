@@ -53,3 +53,4 @@ C:\Users\cahill.t1\Desktop\Prog2FinalProject\Prog2FinalProject\obj\Debug\Prog2Fi
 >>>>>>> 7c10fafca3ca3e6349bf5b62498055f8b9ea942e
 >>>>>>> e3c03e1edee82f7b3f3241b467b05a64b9808272
 C:\Users\cahill.t1\Desktop\Prog2FinalProject\Prog2FinalProject\obj\Debug\Prog2FinalProject.Form2.resources
+C:\Users\cahill.t1\Desktop\Prog2FinalProject\Prog2FinalProject\obj\Debug\Prog2FinalProject.HiveBank.resources

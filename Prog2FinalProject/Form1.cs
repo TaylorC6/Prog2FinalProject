@@ -9,10 +9,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Prog2FinalProject {
-    public partial class Form1 : Form {
+    public partial class HiveBank : Form {
 
         bool username_created = false;
-        public Form1() {
+        Dictionary<string, double> transactions = new Dictionary<string, double>();
+        public HiveBank() {
 
             InitializeComponent();
         }
@@ -20,7 +21,7 @@ namespace Prog2FinalProject {
         //  ListBox:
         //  Add textBox
 
-
+        //Properties.Settings.Default.<setting name here>
 
         private void button1_Click(object sender, EventArgs e) {
             //Transactions
@@ -63,7 +64,10 @@ namespace Prog2FinalProject {
 
         private void Form1_VisibleChanged(object sender, EventArgs e) {
 
-            if (username_created == true) { button4.Text = "Log Out"; }
+            if (username_created == true) { button4.Text = "Log Out"; 
+            label5.Text = "Welcome " + Properties.Settings.Default.Username + "!";
+            label11.Text = "Savings: $" + Properties.Settings.Default.Savings;
+            }
         }
     }
 }

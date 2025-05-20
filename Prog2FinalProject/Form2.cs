@@ -32,6 +32,7 @@ namespace Prog2FinalProject
         }
 
         private void button1_Click(object sender, EventArgs e) {
+            Properties.Settings.Default.Username = textBox1.Text;
             Form f1 = myParent;
             if (textBox1.Text != "") {
                 f1.Show();
