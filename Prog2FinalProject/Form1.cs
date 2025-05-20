@@ -11,10 +11,9 @@ using System.Windows.Forms;
 namespace Prog2FinalProject {
     public partial class HiveBank : Form {
 
-        bool username_created = false;
-        Dictionary<string, double> transactions = new Dictionary<string, double>();
+        bool account_created = false;
+        
         public HiveBank() {
-
             InitializeComponent();
         }
         // subscription title: TextBox
@@ -49,8 +48,8 @@ namespace Prog2FinalProject {
 
         private void button4_Click(object sender, EventArgs e) {
             Form f2 = new Form2(this);
-            if (username_created == false) {
-                username_created = true;
+            if (account_created == false) {
+                account_created = true;
                 f2.Show();
                 this.Hide();
             }
@@ -68,6 +67,9 @@ namespace Prog2FinalProject {
             label5.Text = "Welcome " + Properties.Settings.Default.Username + "!";
             label11.Text = "Savings: $" + Properties.Settings.Default.Savings;
             }
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e){
+            Properties.Settings.Default.Save();
+        }     
         }
     }
 }
