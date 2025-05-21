@@ -40,6 +40,8 @@ namespace Prog2FinalProject {
 
         private void button2_Click(object sender, EventArgs e) {
             //Accounts
+            Form f2 = new Form2(this,account_created);
+            this.Hide()
         }
 
         private void button3_Click(object sender, EventArgs e) {
