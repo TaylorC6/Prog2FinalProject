@@ -40,7 +40,7 @@ namespace Prog2FinalProject {
 
         private void button2_Click(object sender, EventArgs e) {
             //Accounts
-            Form f2 = new Form2(this,account_created);
+            Form f3 = new Form3(this,account_created);
             this.Hide()
         }
 
@@ -65,12 +65,12 @@ namespace Prog2FinalProject {
 
         private void Form1_VisibleChanged(object sender, EventArgs e) {
 
-            if (username_created == true) { button4.Text = "Log Out"; 
+            if (account_created == true) { button4.Text = "Log Out"; 
             label5.Text = "Welcome " + Properties.Settings.Default.Username + "!";
             label11.Text = "Savings: $" + Properties.Settings.Default.Savings;
             }
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e){
-            Properties.Settings.Default.Save();
+        //private void Form1_FormClosing(object sender, FormClosingEventArgs){
+        //    Properties.Settings.Default.Save();
         }     
         }
     }
