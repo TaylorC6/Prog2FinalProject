@@ -174,7 +174,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(516, 152);
             this.label7.TabIndex = 32;
-            this.label7.Text = "//Username has been Created";
+            this.label7.Text = "//Account has been Created";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form2
