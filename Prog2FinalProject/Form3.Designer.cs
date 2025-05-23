@@ -30,6 +30,9 @@
             this.L2 = new System.Windows.Forms.ListBox();
             this.L3 = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.plotView1 = new OxyPlot.WindowsForms.PlotView();
+            this.plotView2 = new OxyPlot.WindowsForms.PlotView();
+            this.plotView3 = new OxyPlot.WindowsForms.PlotView();
             this.SuspendLayout();
             // 
             // savingsbalance
@@ -125,12 +128,51 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // plotView1
+            // 
+            this.plotView1.Location = new System.Drawing.Point(36, 157);
+            this.plotView1.Name = "plotView1";
+            this.plotView1.PanCursor = System.Windows.Forms.Cursors.Hand;
+            this.plotView1.Size = new System.Drawing.Size(193, 280);
+            this.plotView1.TabIndex = 33;
+            this.plotView1.Text = "plotView1";
+            this.plotView1.ZoomHorizontalCursor = System.Windows.Forms.Cursors.SizeWE;
+            this.plotView1.ZoomRectangleCursor = System.Windows.Forms.Cursors.SizeNWSE;
+            this.plotView1.ZoomVerticalCursor = System.Windows.Forms.Cursors.SizeNS;
+            // 
+            // plotView2
+            // 
+            this.plotView2.Location = new System.Drawing.Point(273, 157);
+            this.plotView2.Name = "plotView2";
+            this.plotView2.PanCursor = System.Windows.Forms.Cursors.Hand;
+            this.plotView2.Size = new System.Drawing.Size(204, 280);
+            this.plotView2.TabIndex = 34;
+            this.plotView2.Text = "plotView2";
+            this.plotView2.ZoomHorizontalCursor = System.Windows.Forms.Cursors.SizeWE;
+            this.plotView2.ZoomRectangleCursor = System.Windows.Forms.Cursors.SizeNWSE;
+            this.plotView2.ZoomVerticalCursor = System.Windows.Forms.Cursors.SizeNS;
+            // 
+            // plotView3
+            // 
+            this.plotView3.Location = new System.Drawing.Point(519, 157);
+            this.plotView3.Name = "plotView3";
+            this.plotView3.PanCursor = System.Windows.Forms.Cursors.Hand;
+            this.plotView3.Size = new System.Drawing.Size(207, 280);
+            this.plotView3.TabIndex = 35;
+            this.plotView3.Text = "plotView3";
+            this.plotView3.ZoomHorizontalCursor = System.Windows.Forms.Cursors.SizeWE;
+            this.plotView3.ZoomRectangleCursor = System.Windows.Forms.Cursors.SizeNWSE;
+            this.plotView3.ZoomVerticalCursor = System.Windows.Forms.Cursors.SizeNS;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(749, 476);
+            this.Controls.Add(this.plotView3);
+            this.Controls.Add(this.plotView2);
+            this.Controls.Add(this.plotView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.L3);
             this.Controls.Add(this.L2);
@@ -153,5 +195,8 @@
         private System.Windows.Forms.ListBox L2;
         private System.Windows.Forms.ListBox L3;
         private System.Windows.Forms.Button button1;
+        private OxyPlot.WindowsForms.PlotView plotView1;
+        private OxyPlot.WindowsForms.PlotView plotView2;
+        private OxyPlot.WindowsForms.PlotView plotView3;
     }
 }

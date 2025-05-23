@@ -15,9 +15,9 @@ namespace Prog2FinalProject {
         double checkingsBal = 0.0;
         double investmentsBal = 0.0;
 
-        public Form3(bool loggedin) {
+        public Form3(Form myParent, bool loggedin) {
             InitializeComponent();
-            bool login= loggedin
+            bool login = loggedin;
             
         }
 
