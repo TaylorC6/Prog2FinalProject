@@ -71,7 +71,11 @@ namespace Prog2FinalProject {
             }
         //private void Form1_FormClosing(object sender, FormClosingEventArgs){
         //    Properties.Settings.Default.Save();
-        }     
         }
+
+        private void plotView1_Click(object sender, EventArgs e) {
+
+        }
+    }
     }
 }

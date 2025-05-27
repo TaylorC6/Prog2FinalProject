@@ -49,7 +49,7 @@ namespace Prog2FinalProject.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string Checking {
             get {
                 return ((string)(this["Checking"]));
@@ -73,37 +73,34 @@ namespace Prog2FinalProject.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string Setting4 {
+        public global::System.Collections.Specialized.StringCollection SavingsTrans {
             get {
-                return ((string)(this["Setting4"]));
+                return ((global::System.Collections.Specialized.StringCollection)(this["SavingsTrans"]));
             }
             set {
-                this["Setting4"] = value;
+                this["SavingsTrans"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string Setting5 {
+        public global::System.Collections.Specialized.StringCollection CheckingTrans {
             get {
-                return ((string)(this["Setting5"]));
+                return ((global::System.Collections.Specialized.StringCollection)(this["CheckingTrans"]));
             }
             set {
-                this["Setting5"] = value;
+                this["CheckingTrans"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string Setting6 {
+        public global::System.Collections.Specialized.StringCollection InvestmentsTrans {
             get {
-                return ((string)(this["Setting6"]));
+                return ((global::System.Collections.Specialized.StringCollection)(this["InvestmentsTrans"]));
             }
             set {
-                this["Setting6"] = value;
+                this["InvestmentsTrans"] = value;
             }
         }
         

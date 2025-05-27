@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Prog2FinalProject.Properties" GeneratedClassName="Settings">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
     <Setting Name="Username" Type="System.String" Scope="User">
@@ -9,18 +9,18 @@
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="Checking" Type="System.String" Scope="User">
-      <Value Profile="(Default)">0</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="Investments" Type="System.String" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="Setting4" Type="System.String" Scope="User">
+    <Setting Name="SavingsTrans" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="Setting5" Type="System.String" Scope="User">
+    <Setting Name="CheckingTrans" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="Setting6" Type="System.String" Scope="User">
+    <Setting Name="InvestmentsTrans" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="Setting7" Type="System.String" Scope="User">

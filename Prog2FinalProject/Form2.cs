@@ -47,5 +47,13 @@ namespace Prog2FinalProject
         private void textBox1_Click(object sender, EventArgs e) {
             if (textBox1.Text == "Username Required") { textBox1.Text = ""; textBox1.ForeColor = Color.Black; }
         }
+
+        private void label1_Click(object sender, EventArgs e) {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e) {
+            button2.Visible = false;
+        }
     }
 }

@@ -40,6 +40,7 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label6
@@ -60,7 +61,9 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(538, 458);
             this.label1.TabIndex = 17;
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Text = "Account Creation";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBox1
             // 
@@ -174,8 +177,24 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(516, 152);
             this.label7.TabIndex = 32;
-            this.label7.Text = "//Account has been Created";
+            this.label7.Text = "Account has Been Created";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.LightBlue;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.button2.Location = new System.Drawing.Point(283, 348);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(367, 67);
+            this.button2.TabIndex = 33;
+            this.button2.Text = "Create Account";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form2
             // 
@@ -183,6 +202,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(749, 476);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
@@ -215,5 +235,6 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button2;
     }
 }

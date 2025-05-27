@@ -18,7 +18,9 @@ namespace Prog2FinalProject {
         public Form3(Form myParent, bool loggedin) {
             InitializeComponent();
             bool login = loggedin;
-            
+            //var property = new SettingsProperty(Settings.Default.Properties["<baseSetting>"]);
+            //Settings.Default.Properties.Add(property);
+
         }
 
         private void listBox3_SelectedIndexChanged(object sender, EventArgs e)

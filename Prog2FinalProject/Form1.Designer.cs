@@ -44,6 +44,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.plotView1 = new OxyPlot.WindowsForms.PlotView();
             this.SuspendLayout();
             // 
             // label1
@@ -291,12 +292,26 @@
             this.listBox1.Size = new System.Drawing.Size(240, 128);
             this.listBox1.TabIndex = 23;
             // 
+            // plotView1
+            // 
+            this.plotView1.Location = new System.Drawing.Point(212, 254);
+            this.plotView1.Name = "plotView1";
+            this.plotView1.PanCursor = System.Windows.Forms.Cursors.Hand;
+            this.plotView1.Size = new System.Drawing.Size(317, 198);
+            this.plotView1.TabIndex = 34;
+            this.plotView1.Text = "plotView1";
+            this.plotView1.ZoomHorizontalCursor = System.Windows.Forms.Cursors.SizeWE;
+            this.plotView1.ZoomRectangleCursor = System.Windows.Forms.Cursors.SizeNWSE;
+            this.plotView1.ZoomVerticalCursor = System.Windows.Forms.Cursors.SizeNS;
+            this.plotView1.Click += new System.EventHandler(this.plotView1_Click);
+            // 
             // HiveBank
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(749, 476);
+            this.Controls.Add(this.plotView1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label16);
@@ -349,6 +364,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ListBox listBox1;
+        private OxyPlot.WindowsForms.PlotView plotView1;
     }
 }
 
