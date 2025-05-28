@@ -65,3 +65,6 @@ C:\Users\campbell.c\Desktop\Prog2FinalProject\Prog2FinalProject\obj\Debug\Prog2F
 C:\Users\campbell.c\Desktop\Prog2FinalProject\Prog2FinalProject\obj\Debug\Prog2FinalProject.csproj.CoreCompileInputs.cache
 C:\Users\campbell.c\Desktop\Prog2FinalProject\Prog2FinalProject\obj\Debug\Prog2FinalProject.exe
 C:\Users\campbell.c\Desktop\Prog2FinalProject\Prog2FinalProject\obj\Debug\Prog2FinalProject.pdb
+C:\Users\cahill.t1\Desktop\Prog2FinalProject\Prog2FinalProject\obj\Debug\Prog2FinalProject.Form3.resources
+C:\Users\cahill.t1\Desktop\Prog2FinalProject\Prog2FinalProject\obj\Debug\Prog2FinalProject.Form4.resources
+C:\Users\cahill.t1\Desktop\Prog2FinalProject\Prog2FinalProject\obj\Debug\Prog2FinalProject.Form5.resources

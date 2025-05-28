@@ -44,7 +44,9 @@
             this.label16 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.plotView1 = new OxyPlot.WindowsForms.PlotView();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // label1
@@ -292,18 +294,34 @@
             this.listBox1.Size = new System.Drawing.Size(240, 128);
             this.listBox1.TabIndex = 23;
             // 
-            // plotView1
+            // label17
             // 
-            this.plotView1.Location = new System.Drawing.Point(212, 254);
-            this.plotView1.Name = "plotView1";
-            this.plotView1.PanCursor = System.Windows.Forms.Cursors.Hand;
-            this.plotView1.Size = new System.Drawing.Size(317, 198);
-            this.plotView1.TabIndex = 34;
-            this.plotView1.Text = "plotView1";
-            this.plotView1.ZoomHorizontalCursor = System.Windows.Forms.Cursors.SizeWE;
-            this.plotView1.ZoomRectangleCursor = System.Windows.Forms.Cursors.SizeNWSE;
-            this.plotView1.ZoomVerticalCursor = System.Windows.Forms.Cursors.SizeNS;
-            this.plotView1.Click += new System.EventHandler(this.plotView1_Click);
+            this.label17.BackColor = System.Drawing.Color.PaleGreen;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(209, 272);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(325, 1);
+            this.label17.TabIndex = 35;
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label18
+            // 
+            this.label18.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(212, 254);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(316, 198);
+            this.label18.TabIndex = 36;
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label18.Click += new System.EventHandler(this.label18_Click);
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(215, 272);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(301, 166);
+            this.progressBar1.TabIndex = 37;
+            this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
             // 
             // HiveBank
             // 
@@ -311,7 +329,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(749, 476);
-            this.Controls.Add(this.plotView1);
+            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label18);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label16);
@@ -364,7 +384,10 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ListBox listBox1;
-        private OxyPlot.WindowsForms.PlotView plotView1;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }
 
