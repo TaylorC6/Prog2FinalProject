@@ -24,7 +24,10 @@ namespace Prog2FinalProject {
 
         private void button1_Click(object sender, EventArgs e) {
             //Transactions
-        }
+            Form f5 = new Form5(this);
+            f5.Show();
+            this.Hide();
+            }
 
         private void label5_Click(object sender, EventArgs e) {
 
@@ -61,7 +64,7 @@ namespace Prog2FinalProject {
         }
 
         private void Form1_Load(object sender, EventArgs e) {
-            this.progressBar1.Value = 10;
+            
         }
 
         private void Form1_VisibleChanged(object sender, EventArgs e) {

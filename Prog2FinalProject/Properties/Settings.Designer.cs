@@ -61,7 +61,7 @@ namespace Prog2FinalProject.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string Investments {
             get {
                 return ((string)(this["Investments"]));
@@ -73,6 +73,12 @@ namespace Prog2FinalProject.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute(@"<?xml version=""1.0"" encoding=""utf-16""?>
+<ArrayOfString xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"">
+  <string>monkey</string>
+  <string>balls</string>
+  <string>d4si6yujmt</string>
+</ArrayOfString>")]
         public global::System.Collections.Specialized.StringCollection SavingsTrans {
             get {
                 return ((global::System.Collections.Specialized.StringCollection)(this["SavingsTrans"]));

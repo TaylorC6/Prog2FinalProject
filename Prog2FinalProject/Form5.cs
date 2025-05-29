@@ -26,18 +26,28 @@ namespace Prog2FinalProject
             }
 
         private void button2_Click(object sender, EventArgs e) {
+           
+                
+                
+            
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e) {
+             float garbage = 0;
             string temp = "";
-            bool success = float.TryParse(textBox2.Text);
-            if (textBox1.Text.Contains("~")){
+            bool success = float.TryParse(textBox2.Text, out garbage);
+            if (textBox1.Text.Contains("~")) {
                 MessageBox.Show("You cannot use ~ in your transaction name.");
             }
-            else if (success == false){
+            else if (success == false) {
                 MessageBox.Show("You must enter a  positive number!");
             }
-            else{
+            else {
                 temp = textBox1.Text + "~" + textBox2.Text;
-                
-                
+                Properties.Settings.Default.SavingsTrans.Add(temp);
+                Properties.Settings.Default.Save();
+                MessageBox.Show("success!");
             }
 
         }
