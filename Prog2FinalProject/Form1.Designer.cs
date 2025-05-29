@@ -328,7 +328,7 @@
             // 
             // label19
             // 
-            this.label19.BackColor = System.Drawing.Color.LimeGreen;
+            this.label19.BackColor = System.Drawing.Color.OrangeRed;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(242, 285);
             this.label19.Name = "label19";
@@ -348,7 +348,7 @@
             // 
             // label21
             // 
-            this.label21.BackColor = System.Drawing.Color.LimeGreen;
+            this.label21.BackColor = System.Drawing.Color.OrangeRed;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(294, 285);
             this.label21.Name = "label21";
@@ -368,7 +368,7 @@
             // 
             // label23
             // 
-            this.label23.BackColor = System.Drawing.Color.LimeGreen;
+            this.label23.BackColor = System.Drawing.Color.OrangeRed;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(346, 285);
             this.label23.Name = "label23";
@@ -388,7 +388,7 @@
             // 
             // label25
             // 
-            this.label25.BackColor = System.Drawing.Color.LimeGreen;
+            this.label25.BackColor = System.Drawing.Color.OrangeRed;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.Location = new System.Drawing.Point(398, 285);
             this.label25.Name = "label25";
@@ -408,7 +408,7 @@
             // 
             // label27
             // 
-            this.label27.BackColor = System.Drawing.Color.LimeGreen;
+            this.label27.BackColor = System.Drawing.Color.OrangeRed;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.Location = new System.Drawing.Point(450, 285);
             this.label27.Name = "label27";
@@ -428,7 +428,7 @@
             // 
             // label29
             // 
-            this.label29.BackColor = System.Drawing.Color.LimeGreen;
+            this.label29.BackColor = System.Drawing.Color.OrangeRed;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.Location = new System.Drawing.Point(502, 285);
             this.label29.Name = "label29";
