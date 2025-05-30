@@ -33,6 +33,7 @@
             this.plotView1 = new OxyPlot.WindowsForms.PlotView();
             this.plotView2 = new OxyPlot.WindowsForms.PlotView();
             this.plotView3 = new OxyPlot.WindowsForms.PlotView();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // savingsbalance
@@ -164,12 +165,30 @@
             this.plotView3.ZoomRectangleCursor = System.Windows.Forms.Cursors.SizeNWSE;
             this.plotView3.ZoomVerticalCursor = System.Windows.Forms.Cursors.SizeNS;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.button2.Location = new System.Drawing.Point(574, 12);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(163, 36);
+            this.button2.TabIndex = 36;
+            this.button2.Text = "Exit";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(749, 476);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.plotView3);
             this.Controls.Add(this.plotView2);
             this.Controls.Add(this.plotView1);
@@ -198,5 +217,6 @@
         private OxyPlot.WindowsForms.PlotView plotView1;
         private OxyPlot.WindowsForms.PlotView plotView2;
         private OxyPlot.WindowsForms.PlotView plotView3;
+        private System.Windows.Forms.Button button2;
     }
 }

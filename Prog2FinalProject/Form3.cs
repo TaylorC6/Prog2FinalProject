@@ -42,5 +42,9 @@ namespace Prog2FinalProject {
             checkingsbalance.Text = "Checking Account Balance: " + checkingsBal;
             investmentsbalance.Text = "Investment Account Balance: " + investmentsBal;
         }
+
+        private void button2_Click(object sender, EventArgs e) {
+            Application.Exit();
+        }
     }
 }

@@ -59,7 +59,7 @@ namespace Prog2FinalProject {
                 this.Hide();
             }
             else {
-                Application.Exit();
+                if (button4.Text == "Log Out") { account_created = false; f2.Show(); this.Hide(); }
             }
         }
 
@@ -92,6 +92,10 @@ namespace Prog2FinalProject {
         }
 
         private void progressBar1_Click(object sender, EventArgs e) {
+        }
+
+        private void button5_Click_1(object sender, EventArgs e) {
+            Application.Exit();
         }
     }
     
