@@ -34,7 +34,7 @@ namespace Prog2FinalProject
         }
 
         private void button2_Click_1(object sender, EventArgs e) {
-             float garbage = 0;
+            float garbage = 0;
             string temp = "";
             bool success = float.TryParse(textBox2.Text, out garbage);
             if (textBox1.Text.Contains("~")) {
@@ -47,7 +47,7 @@ namespace Prog2FinalProject
                 temp = textBox1.Text + "~" + textBox2.Text;
                 Properties.Settings.Default.SavingsTrans.Add(temp);
                 Properties.Settings.Default.Save();
-                MessageBox.Show("success!");
+                MessageBox.Show("success!" + temp);
             }
 
         }

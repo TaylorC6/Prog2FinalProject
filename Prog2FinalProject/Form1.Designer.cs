@@ -321,9 +321,9 @@
             // 
             this.label17.BackColor = System.Drawing.Color.LimeGreen;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(216, 285);
+            this.label17.Location = new System.Drawing.Point(216, 295);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(20, 165);
+            this.label17.Size = new System.Drawing.Size(20, 155);
             this.label17.TabIndex = 37;
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 

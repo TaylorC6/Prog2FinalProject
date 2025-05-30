@@ -74,7 +74,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(508, 458);
             this.label1.TabIndex = 34;
-            this.label1.Text = "Subscriptions";
+            this.label1.Text = "Upcoming / Recurring Payments";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // listBox1
@@ -111,7 +111,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(202, 30);
             this.label2.TabIndex = 38;
-            this.label2.Text = "Enter Subscription:";
+            this.label2.Text = "Enter Name:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label3

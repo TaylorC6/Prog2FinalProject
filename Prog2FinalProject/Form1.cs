@@ -78,9 +78,6 @@ namespace Prog2FinalProject {
         //    Properties.Settings.Default.Save();
         }
 
-        private void plotView1_Click(object sender, EventArgs e) {
-
-        }
 
         private void button5_Click(object sender, EventArgs e) 
         {
@@ -91,8 +88,7 @@ namespace Prog2FinalProject {
 
         }
 
-        private void progressBar1_Click(object sender, EventArgs e) {
-        }
+
 
         private void button5_Click_1(object sender, EventArgs e) {
             Application.Exit();
