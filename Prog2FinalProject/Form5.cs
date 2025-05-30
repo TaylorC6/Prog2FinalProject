@@ -45,7 +45,7 @@ namespace Prog2FinalProject
                 MessageBox.Show("You must enter a  positive number!");
             }
             else {
-                temp = textBox1.Text + "~" + textBox2.Text +"|" + Check.ToString;
+                temp = textBox1.Text + "~" + textBox2.Text +"|" + Check.ToString();
                 Properties.Settings.Default.SavingsTrans.Add(temp);
                 Properties.Settings.Default.Save();
                 MessageBox.Show("success! " + temp + Properties.Settings.Default.SavingsTrans
