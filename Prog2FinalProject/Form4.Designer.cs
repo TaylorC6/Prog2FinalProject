@@ -159,6 +159,7 @@
             this.Controls.Add(this.label6);
             this.Name = "Form4";
             this.Text = "Form4";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form4_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

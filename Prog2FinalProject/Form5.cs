@@ -12,11 +12,16 @@ namespace Prog2FinalProject
 {
     public partial class Form5 : Form
     {
+        System.Collections.Specialized.StringCollection SavingsTransactions = Properties.Settings.Default.SavingsTrans;
+        System.Collections.Specialized.StringCollection CheckingTransactions = Properties.Settings.Default.CheckingTrans;
+        System.Collections.Specialized.StringCollection InvestmentsTransactions = Properties.Settings.Default.InvestmentsTrans;
         private Form myParent;
         public Form5(Form myParent)
         {
+            
             InitializeComponent();
             this.myParent = myParent;
+            
         }
 
         private void button1_Click(object sender, EventArgs e) {
@@ -47,14 +52,16 @@ namespace Prog2FinalProject
             else {
                 temp = textBox1.Text + "~" + textBox2.Text +"|" + Check.ToString();
                 Properties.Settings.Default.SavingsTrans.Add(temp);
-                Properties.Settings.Default.Save();
-                MessageBox.Show("success! " + temp + Properties.Settings.Default.SavingsTrans
-                                                         [Properties.Settings.Default.SavingsTrans.Count]);
+                
+                MessageBox.Show("success! " + temp + "||||||||" + Properties.Settings.Default.SavingsTrans
+                                                         [Properties.Settings.Default.SavingsTrans.Count - 1]);
+                
             }
 
         }
 
         private void button3_Click(object sender, EventArgs e) {
+            Properties.Settings.Default.Save();
             Application.Exit();
         }
     }

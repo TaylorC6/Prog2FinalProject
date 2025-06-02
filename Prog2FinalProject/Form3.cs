@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Prog2FinalProject {
     public partial class Form3 : Form {
-
+        private Form myParent;
         double savingsBal = 0.0;
         double checkingsBal = 0.0;
         double investmentsBal = 0.0;
@@ -18,6 +18,7 @@ namespace Prog2FinalProject {
         public Form3(Form myParent, bool loggedin) {
             InitializeComponent();
             bool login = loggedin;
+            this.myParent = myParent;
             //var property = new SettingsProperty(Settings.Default.Properties["<baseSetting>"]);
             //Settings.Default.Properties.Add(property);
 
@@ -45,6 +46,15 @@ namespace Prog2FinalProject {
 
         private void button2_Click(object sender, EventArgs e) {
             Application.Exit();
+        }
+
+        private void Form3_Load(object sender, EventArgs e) {
+            for (int i = 0; i < 5; i++) {
+                L1.Items.Add(Properties.Settings.Default.SavingsTrans[i]);
+                L2.Items.Add(Properties.Settings.Default.CheckingTrans[i]);
+                L3.Items.Add(Properties.Settings.Default.InvestmentsTrans[i]);
+
+            }
         }
     }
 }

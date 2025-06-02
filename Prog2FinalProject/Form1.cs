@@ -50,12 +50,16 @@ namespace Prog2FinalProject {
 
         private void button2_Click(object sender, EventArgs e) {
             //Accounts
-            Form f3 = new Form3(this,account_created);
+            Form f3 = new Form3(this, account_created);
+            f3.Show();
             this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e) {
             //Upcoming
+            Form f4 = new Form4(this);
+            f4.Show();
+            this.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e) {
