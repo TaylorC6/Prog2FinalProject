@@ -49,10 +49,11 @@ namespace Prog2FinalProject {
         }
 
         private void Form3_Load(object sender, EventArgs e) {
-            for (int i = 0; i < 5; i++) {
-                L1.Items.Add(Properties.Settings.Default.SavingsTrans[i]);
-                L2.Items.Add(Properties.Settings.Default.CheckingTrans[i]);
-                L3.Items.Add(Properties.Settings.Default.InvestmentsTrans[i]);
+
+            for (int i = 0; i < 6; i++) {
+                L1.Items.Add(Properties.Settings.Default.SavingsTrans[Properties.Settings.Default.SavingsTrans.Count-i]);
+                L2.Items.Add(Properties.Settings.Default.CheckingTrans[Properties.Settings.Default.SavingsTrans.Count-i]);
+                L3.Items.Add(Properties.Settings.Default.InvestmentsTrans[Properties.Settings.Default.SavingsTrans.Count-i]);
 
             }
         }
