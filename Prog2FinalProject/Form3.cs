@@ -50,12 +50,38 @@ namespace Prog2FinalProject {
 
         private void Form3_Load(object sender, EventArgs e) {
 
-            for (int i = 0; i < 6; i++) {
-                L1.Items.Add(Properties.Settings.Default.SavingsTrans[Properties.Settings.Default.SavingsTrans.Count-i]);
-                L2.Items.Add(Properties.Settings.Default.CheckingTrans[Properties.Settings.Default.SavingsTrans.Count-i]);
-                L3.Items.Add(Properties.Settings.Default.InvestmentsTrans[Properties.Settings.Default.SavingsTrans.Count-i]);
-
+            if(Properties.Settings.Default.SavingsTrans.Count >= 5 || Properties.Settings.Default.SavingsTrans.Count == null) {
+                L1.Items.Add("Add at least 5 transactions to the account");   
             }
+            else {
+                for (int i = 0; i < 5; i++) { 
+                    L1.Items.Add(Properties.Settings.Default.SavingsTrans[Properties.Settings.Default.SavingsTrans.Count - i]);
+                }
+            }
+
+            if (Properties.Settings.Default.CheckingTrans.Count >= 5 || Properties.Settings.Default.CheckingTrans.Count == null) { 
+                L2.Items.Add("Add at least 5 transactions to the account");
+            }
+            else{     
+                for (int i = 0; i < 5; i++) { }
+                        
+                        L2.Items.Add(Properties.Settings.Default.CheckingTrans[Properties.Settings.Default.CheckingTrans.Count - i]);
+                        }
+            }
+
+            if (Properties.Settings.Default.InvestmentsTrans.Count >= 5 || Properties.Settings.Default.InvestmentsTrans.Count == null)
+            {
+                L3.Items.Add("Add at least 5 transactions to the account");
+            }
+            else
+            {
+                
+                for (int i = 0; i < 5; i++)
+                {
+                    L3.Items.Add(Properties.Settings.Default.InvestmentsTrans[Properties.Settings.Default.InvestmentsTrans.Count - i]);
+                }
+            }
+        }
         }
     }
 }
