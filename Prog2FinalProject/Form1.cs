@@ -12,6 +12,18 @@ namespace Prog2FinalProject {
     public partial class HiveBank : Form {
 
         bool account_created = false;
+        int a1 = 0; // subtract percentage based on income and expense on every line
+        int a2 = 0;
+        int a3 = 0;
+        int a4 = 0;
+        int a5 = 0;
+        int a6 = 0;
+        int a7 = 0;
+        int a8 = 0;
+        int a9 = 0;
+        int a10 = 0;
+        int a11 = 0;
+        int a12 = 0;
         
         public HiveBank() {
             InitializeComponent();
@@ -30,11 +42,6 @@ namespace Prog2FinalProject {
             }
 
         private void label5_Click(object sender, EventArgs e) {
-
-
-
-
-
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e) {
@@ -43,12 +50,16 @@ namespace Prog2FinalProject {
 
         private void button2_Click(object sender, EventArgs e) {
             //Accounts
-            Form f3 = new Form3(this,account_created);
+            Form f3 = new Form3(this, account_created);
+            f3.Show();
             this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e) {
             //Upcoming
+            Form f4 = new Form4(this);
+            f4.Show();
+            this.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e) {
@@ -59,7 +70,7 @@ namespace Prog2FinalProject {
                 this.Hide();
             }
             else {
-                Application.Exit();
+                if (button4.Text == "Log Out") { account_created = false; f2.Show(); this.Hide(); }
             }
         }
 
@@ -72,15 +83,37 @@ namespace Prog2FinalProject {
             if (account_created == true) { button4.Text = "Log Out"; 
             label5.Text = "Welcome " + Properties.Settings.Default.Username + "!";
             label11.Text = "Savings: $" + Properties.Settings.Default.Savings;
-            
+            In1.Height = 165 - a1;
+            In1.Top = (int)285 + a1;
+            Ex1.Height = 165 - a1;
+            Ex1.Top = (int)285 + a2;
+            In2.Height = 165 - a3;
+            In2.Top = (int)285 + a3;
+            Ex2.Height = 165 - a4;
+            Ex2.Top = (int)285 + a4;
+            In3.Height = 165 - a5;
+            In3.Top = (int)285 + a5;
+            Ex3.Height = 165 - a6;
+            Ex3.Top = (int)285 + a6;
+            In4.Height = 165 - a7;
+            In4.Top = (int)285 + a7;
+            Ex4.Height = 165 - a8;
+            Ex4.Top = (int)285 + a8;
+            In5.Height = 165 - a9;
+            In5.Top = (int)285 + a9;
+            Ex5.Height = 165 - a10;
+            Ex5.Top = (int)285 + a10;
+            In6.Height = 165 - a11;
+            In6.Top = (int)285 + a11;
+            Ex6.Height = 165 - a12;
+            Ex6.Top = (int)285 + a12;
+
+
             }
         //private void Form1_FormClosing(object sender, FormClosingEventArgs){
         //    Properties.Settings.Default.Save();
         }
 
-        private void plotView1_Click(object sender, EventArgs e) {
-
-        }
 
         private void button5_Click(object sender, EventArgs e) 
         {
@@ -91,7 +124,10 @@ namespace Prog2FinalProject {
 
         }
 
-        private void progressBar1_Click(object sender, EventArgs e) {
+
+
+        private void button5_Click_1(object sender, EventArgs e) {
+            Application.Exit();
         }
     }
     

@@ -20,29 +20,21 @@ namespace Prog2FinalProject
             string name = textBox1.Text;
             string mail = textBox2.Text;
             string password = textBox3.Text;
-            string unknown = textBox4.Text;
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e) {
             
         }
-
         private void textBox3_TextChanged(object sender, EventArgs e) {
 
         }
 
         private void button1_Click(object sender, EventArgs e) {
-            Properties.Settings.Default.Username = textBox1.Text;
             Form f1 = myParent;
-            if (textBox1.Text != "") {
-                f1.Show();
-                this.Hide();
-            } else {
-                textBox1.ForeColor = Color.Red;
-                textBox1.Text = "Username Required";
-            } 
-
-            }
+            f1.Show();
+            this.Hide();
+        } 
 
         private void textBox1_Click(object sender, EventArgs e) {
             if (textBox1.Text == "Username Required") { textBox1.Text = ""; textBox1.ForeColor = Color.Black; }
@@ -53,7 +45,34 @@ namespace Prog2FinalProject
         }
 
         private void button2_Click(object sender, EventArgs e) {
-            button2.Visible = false;
+            bool b1 = false;
+            bool b2 = false;
+            bool b3 = false;
+            if (textBox1.Text == "") { textBox1.Text = "Username Required"; textBox1.ForeColor = Color.Red; b1 = false; } else if (textBox1.Text != "Username Required") { b1 = true; }
+            if (textBox2.Text == "") { textBox2.Text = "Email Required"; textBox2.ForeColor = Color.Red; b2 = false; } else if (textBox2.Text != "Email Required") { b2 = true; }
+            if (textBox3.Text == "") { textBox3.Text = "Password Required"; textBox3.ForeColor = Color.Red; b3 = false; } else if (textBox3.Text != "Password Required") { b3 = true; }
+            if (b1 == true && b2 == true && b3 == true) { button2.Visible = false;
+                Properties.Settings.Default.Username = textBox1.Text;
+                Properties.Settings.Default.Email = textBox2.Text;
+                Properties.Settings.Default.Password = textBox3.Text;
+                Properties.Settings.Default.LoggedIn = true;
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e) {
+            Application.Exit();
+        }
+
+        private void textBox2_TextChanged_1(object sender, EventArgs e) {
+
+        }
+
+        private void textBox2_Click(object sender, EventArgs e) {
+            if (textBox2.Text == "Email Required") { textBox2.Text = ""; textBox2.ForeColor = Color.Black; }
+        }
+
+        private void textBox3_Click(object sender, EventArgs e) {
+            if (textBox3.Text == "Password Required") { textBox3.Text = ""; textBox3.ForeColor = Color.Black; }
         }
     }
 }
