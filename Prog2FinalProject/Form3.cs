@@ -19,6 +19,7 @@ namespace Prog2FinalProject {
             InitializeComponent();
             bool login = loggedin;
             this.myParent = myParent;
+            
             //var property = new SettingsProperty(Settings.Default.Properties["<baseSetting>"]);
             //Settings.Default.Properties.Add(property);
 
@@ -31,7 +32,9 @@ namespace Prog2FinalProject {
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Form f1 = myParent;
+            f1.Show();
+            this.Hide();
         }
 
         private void savingsbalance_Click(object sender, EventArgs e) {
@@ -91,6 +94,11 @@ namespace Prog2FinalProject {
         }
 
         private void L2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
 
         }
