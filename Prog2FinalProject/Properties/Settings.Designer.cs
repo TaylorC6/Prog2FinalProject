@@ -38,9 +38,9 @@ namespace Prog2FinalProject.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public string Savings {
+        public float Savings {
             get {
-                return ((string)(this["Savings"]));
+                return ((float)(this["Savings"]));
             }
             set {
                 this["Savings"] = value;
@@ -49,12 +49,8 @@ namespace Prog2FinalProject.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute(@"<?xml version=""1.0"" encoding=""utf-16""?>
-<ArrayOfString xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"">
-  <string>monkey</string>
-  <string>balls</string>
-  <string>d4si6yujmt</string>
-</ArrayOfString>")]
+        [global::System.Configuration.DefaultSettingValueAttribute("<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<ArrayOfString xmlns:xsd=\"http://www.w3." +
+            "org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" />")]
         public global::System.Collections.Specialized.StringCollection SavingsTrans {
             get {
                 return ((global::System.Collections.Specialized.StringCollection)(this["SavingsTrans"]));
@@ -66,6 +62,9 @@ namespace Prog2FinalProject.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<ArrayOfString xmlns:xsd=\"http://www.w3." +
+            "org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\r\n  <s" +
+            "tring>thing</string>\r\n</ArrayOfString>")]
         public global::System.Collections.Specialized.StringCollection CheckingTrans {
             get {
                 return ((global::System.Collections.Specialized.StringCollection)(this["CheckingTrans"]));
@@ -77,6 +76,9 @@ namespace Prog2FinalProject.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<ArrayOfString xmlns:xsd=\"http://www.w3." +
+            "org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\r\n  <s" +
+            "tring>fun</string>\r\n</ArrayOfString>")]
         public global::System.Collections.Specialized.StringCollection InvestmentsTrans {
             get {
                 return ((global::System.Collections.Specialized.StringCollection)(this["InvestmentsTrans"]));
@@ -173,9 +175,9 @@ namespace Prog2FinalProject.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public string Checking {
+        public float Checking {
             get {
-                return ((string)(this["Checking"]));
+                return ((float)(this["Checking"]));
             }
             set {
                 this["Checking"] = value;
@@ -185,9 +187,9 @@ namespace Prog2FinalProject.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public string Investments {
+        public float Investments {
             get {
-                return ((string)(this["Investments"]));
+                return ((float)(this["Investments"]));
             }
             set {
                 this["Investments"] = value;

@@ -49,8 +49,10 @@ namespace Prog2FinalProject {
         }
 
         private void Form3_Load(object sender, EventArgs e) {
-
-            if(Properties.Settings.Default.SavingsTrans.Count < 5) {
+            savingsbalance.Text = "Savings Account Balance $" + Properties.Settings.Default.Savings;
+            checkingsbalance.Text = "Checking Account Balance $" + Properties.Settings.Default.Checking;
+            investmentsbalance.Text = "Investments Account Balance $" + Properties.Settings.Default.Investments;
+            if (Properties.Settings.Default.SavingsTrans.Count < 5) {
                 L1.Items.Add("Add at least 5 transactions to the account");   
             }
             else {
@@ -84,6 +86,11 @@ namespace Prog2FinalProject {
         }
 
         private void L1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void L2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

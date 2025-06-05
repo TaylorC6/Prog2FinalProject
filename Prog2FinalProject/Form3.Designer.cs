@@ -70,44 +70,48 @@
             // L1
             // 
             this.L1.BackColor = System.Drawing.Color.IndianRed;
-            this.L1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.L1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.L1.FormattingEnabled = true;
-            this.L1.ItemHeight = 20;
+            this.L1.HorizontalScrollbar = true;
+            this.L1.ItemHeight = 15;
             this.L1.Items.AddRange(new object[] {
             "Latest 5 transactions:",
             ""});
             this.L1.Location = new System.Drawing.Point(12, 124);
             this.L1.Name = "L1";
-            this.L1.Size = new System.Drawing.Size(239, 324);
+            this.L1.Size = new System.Drawing.Size(239, 319);
             this.L1.TabIndex = 4;
             this.L1.SelectedIndexChanged += new System.EventHandler(this.L1_SelectedIndexChanged);
             // 
             // L2
             // 
             this.L2.BackColor = System.Drawing.Color.IndianRed;
-            this.L2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.L2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.L2.FormattingEnabled = true;
-            this.L2.ItemHeight = 20;
+            this.L2.HorizontalScrollbar = true;
+            this.L2.ItemHeight = 15;
             this.L2.Items.AddRange(new object[] {
             "Latest 5 transactions:",
             ""});
             this.L2.Location = new System.Drawing.Point(257, 123);
             this.L2.Name = "L2";
-            this.L2.Size = new System.Drawing.Size(235, 324);
+            this.L2.Size = new System.Drawing.Size(235, 319);
             this.L2.TabIndex = 5;
+            this.L2.SelectedIndexChanged += new System.EventHandler(this.L2_SelectedIndexChanged);
             // 
             // L3
             // 
             this.L3.BackColor = System.Drawing.Color.IndianRed;
-            this.L3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.L3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.L3.FormattingEnabled = true;
-            this.L3.ItemHeight = 20;
+            this.L3.HorizontalScrollbar = true;
+            this.L3.ItemHeight = 15;
             this.L3.Items.AddRange(new object[] {
             "Latest 5 transactions:",
             ""});
             this.L3.Location = new System.Drawing.Point(498, 123);
             this.L3.Name = "L3";
-            this.L3.Size = new System.Drawing.Size(248, 324);
+            this.L3.Size = new System.Drawing.Size(248, 319);
             this.L3.TabIndex = 6;
             this.L3.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged);
             // 

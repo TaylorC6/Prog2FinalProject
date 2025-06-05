@@ -51,11 +51,39 @@ namespace Prog2FinalProject
             }
             else {
                 temp = textBox1.Text + "~" + textBox2.Text +"|" + Check.ToString();
-                Properties.Settings.Default.SavingsTrans.Add(temp);
-                
-                MessageBox.Show("success! " + temp + "||||||||" + Properties.Settings.Default.SavingsTrans
-                                                         [Properties.Settings.Default.SavingsTrans.Count - 1]);
-                
+                if (comboBox1.Text == "Savings")
+                {
+                    Properties.Settings.Default.SavingsTrans.Add(temp);
+                    if (success)
+                    {
+                        Properties.Settings.Default.Savings += garbage;
+                    }
+
+                    MessageBox.Show("success! " + temp + "||||||||" + Properties.Settings.Default.SavingsTrans
+                                                             [Properties.Settings.Default.SavingsTrans.Count - 1]);
+                }
+                else if (comboBox1.Text == "Checking")
+                {
+                    Properties.Settings.Default.CheckingTrans.Add(temp);
+                    if (success)
+                    {
+                        Properties.Settings.Default.Checking += garbage;
+                    }
+
+                    MessageBox.Show("success! " + temp + "||||||||" + Properties.Settings.Default.CheckingTrans
+                                                             [Properties.Settings.Default.CheckingTrans.Count - 1]);
+                }
+                else if (comboBox1.Text == "Investments")
+                {
+                    Properties.Settings.Default.InvestmentsTrans.Add(temp);
+                    if (success)
+                    {
+                        Properties.Settings.Default.Investments += garbage;
+                    } 
+
+                    MessageBox.Show("success! " + temp + "||||||||" + Properties.Settings.Default.InvestmentsTrans
+                                                             [Properties.Settings.Default.InvestmentsTrans.Count - 1]);
+                }
             }
 
         }
@@ -66,6 +94,11 @@ namespace Prog2FinalProject
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
