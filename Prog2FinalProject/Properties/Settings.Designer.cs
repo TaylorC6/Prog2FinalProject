@@ -49,7 +49,7 @@ namespace Prog2FinalProject.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string Checking {
             get {
                 return ((string)(this["Checking"]));
@@ -61,7 +61,7 @@ namespace Prog2FinalProject.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string Investments {
             get {
                 return ((string)(this["Investments"]));
@@ -73,37 +73,40 @@ namespace Prog2FinalProject.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string Setting4 {
+        [global::System.Configuration.DefaultSettingValueAttribute(@"<?xml version=""1.0"" encoding=""utf-16""?>
+<ArrayOfString xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"">
+  <string>monkey</string>
+  <string>balls</string>
+  <string>d4si6yujmt</string>
+</ArrayOfString>")]
+        public global::System.Collections.Specialized.StringCollection SavingsTrans {
             get {
-                return ((string)(this["Setting4"]));
+                return ((global::System.Collections.Specialized.StringCollection)(this["SavingsTrans"]));
             }
             set {
-                this["Setting4"] = value;
+                this["SavingsTrans"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string Setting5 {
+        public global::System.Collections.Specialized.StringCollection CheckingTrans {
             get {
-                return ((string)(this["Setting5"]));
+                return ((global::System.Collections.Specialized.StringCollection)(this["CheckingTrans"]));
             }
             set {
-                this["Setting5"] = value;
+                this["CheckingTrans"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string Setting6 {
+        public global::System.Collections.Specialized.StringCollection InvestmentsTrans {
             get {
-                return ((string)(this["Setting6"]));
+                return ((global::System.Collections.Specialized.StringCollection)(this["InvestmentsTrans"]));
             }
             set {
-                this["Setting6"] = value;
+                this["InvestmentsTrans"] = value;
             }
         }
         
