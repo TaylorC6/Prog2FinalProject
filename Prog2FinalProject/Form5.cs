@@ -64,5 +64,10 @@ namespace Prog2FinalProject
             Properties.Settings.Default.Save();
             Application.Exit();
         }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

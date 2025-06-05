@@ -20,7 +20,7 @@ namespace Prog2FinalProject
             string name = textBox1.Text;
             string mail = textBox2.Text;
             string password = textBox3.Text;
-            string unknown = textBox4.Text;
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e) {

@@ -50,38 +50,44 @@ namespace Prog2FinalProject {
 
         private void Form3_Load(object sender, EventArgs e) {
 
-            if(Properties.Settings.Default.SavingsTrans.Count >= 5 || Properties.Settings.Default.SavingsTrans.Count == null) {
+            if(Properties.Settings.Default.SavingsTrans.Count < 5) {
                 L1.Items.Add("Add at least 5 transactions to the account");   
             }
             else {
-                for (int i = 0; i < 5; i++) { 
+                for (int i = 1; i < 2; i++) { 
                     L1.Items.Add(Properties.Settings.Default.SavingsTrans[Properties.Settings.Default.SavingsTrans.Count - i]);
                 }
             }
 
-            if (Properties.Settings.Default.CheckingTrans.Count >= 5 || Properties.Settings.Default.CheckingTrans.Count == null) { 
+            if (Properties.Settings.Default.CheckingTrans.Count < 5) { 
                 L2.Items.Add("Add at least 5 transactions to the account");
             }
             else{     
-                for (int i = 0; i < 5; i++) { }
-                        
+                for (int i = 1; i < 2; i++) { 
                         L2.Items.Add(Properties.Settings.Default.CheckingTrans[Properties.Settings.Default.CheckingTrans.Count - i]);
                         }
-            }
-
-            if (Properties.Settings.Default.InvestmentsTrans.Count >= 5 || Properties.Settings.Default.InvestmentsTrans.Count == null)
+            if (Properties.Settings.Default.InvestmentsTrans.Count < 5)
             {
                 L3.Items.Add("Add at least 5 transactions to the account");
             }
             else
             {
-                
-                for (int i = 0; i < 5; i++)
+
+                for (int i = 1; i < 2; i++)
                 {
                     L3.Items.Add(Properties.Settings.Default.InvestmentsTrans[Properties.Settings.Default.InvestmentsTrans.Count - i]);
                 }
             }
         }
+
+           
+        }
+
+        private void L1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
+
+

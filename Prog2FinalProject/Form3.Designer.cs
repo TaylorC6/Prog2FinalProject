@@ -80,6 +80,7 @@
             this.L1.Name = "L1";
             this.L1.Size = new System.Drawing.Size(239, 324);
             this.L1.TabIndex = 4;
+            this.L1.SelectedIndexChanged += new System.EventHandler(this.L1_SelectedIndexChanged);
             // 
             // L2
             // 
